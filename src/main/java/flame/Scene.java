@@ -33,5 +33,9 @@ public abstract class Scene {
         }
     }
 
+    public Camera getCamera(){
+        return this.camera;
+    }
+
 
 }

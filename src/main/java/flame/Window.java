@@ -135,6 +135,10 @@ public class Window {
         }
     }
 
+    public static Scene getCurrentScene(){
+        return get().currentScene;
+    }
+
     //getters
    /* public static float getR(){
         return r;

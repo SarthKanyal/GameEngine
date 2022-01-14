@@ -6,10 +6,19 @@ import java.util.List;
 public class GameObject {
     private String objName;
     private List<Component> objComponents;
+    public Transform transform;
+
 
     public GameObject(String objName){
         this.objName = objName;
         this.objComponents = new ArrayList<>();
+        this.transform = new Transform();
+    }
+
+    public GameObject(String objName, Transform transform){
+        this.objName = objName;
+        this.objComponents = new ArrayList<>();
+        this.transform = transform;
     }
 
     public <T extends Component> T getComponent(Class<T> componentClass){
